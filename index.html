@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="background: #232323;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora-imc</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="imc.js"></script>
+</head>
+
+<body>
+    <div class="calculadora-imc">
+        <div class="container">
+            <h3 class="title">Cálculo IMC</h3>
+
+            <div class="inputs-calc">
+                <p>Digite sua altura: <span>(ex: 1.80)</span></p>
+                <input type="text" placeholder="Metros" id="altura_input" maxlength="4">
+            </div>
+            <div class="inputs-calc">
+                <p>Digite seu peso: <span>(ex: 79.9)</span></p>
+                <input type="text" placeholder="Quilos" id="peso_input" maxlength="6">
+            </div>
+
+            <ul class="button-calc">
+                <li>
+                    <button type="button" id="submit_calc" onclick="calculate();">Calcular</button>
+                </li>
+                <li>
+                    <button type="button" id="clear_calc" onclick="window.location.reload()">Limpar</button>
+                </li>
+            </ul>
+
+            <table class="table-calc">
+                <tbody>
+                    <tr class="table-title">
+                        <td>IMC</td>
+                        <td>Classificação</td>
+                    </tr>
+                    <tr class="table-result">
+                        <td>Menor que 18.5</td>
+                        <td>Abaixo do peso</td>
+                    </tr>
+                    <tr class="table-result">
+                        <td>Entre 18.5 e 24.9</td>
+                        <td>Normal</td>
+                    </tr>
+                    <tr class="table-result">
+                        <td>Entre 25 e 29.9</td>
+                        <td>Sobrepeso</td>
+                    </tr>
+                    <tr class="table-result">
+                        <td>Entre 30 e 39.9</td>
+                        <td>Obesidade</td>
+                    </tr>
+                    <tr class="table-result">
+                        <td>Maior que 40</td>
+                        <td>Obesidade Grave</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="calc-result">
+                <span>SEU IMC É:</span>
+                <strong></strong>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

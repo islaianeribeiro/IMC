@@ -1,0 +1,119 @@
+.calculadora-imc {
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.calculadora-imc .container {
+    width: 400px;
+    padding: 15px;
+    border: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #edeaea;
+}
+
+.title {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #6757a3;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs-calc {
+    display: flex;
+    vertical-align: top;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.inputs-calc p {
+    font-size: 14px;
+}
+
+.inputs-calc p span {
+    font-size: 13px;
+    color: #6757a3;
+}
+
+.inputs-calc input {
+    display: block;
+    width: 130px;
+    padding: 6px 10px;
+    border: 1px solid #6757a3;
+    border-radius: 10px;
+    margin: 8px;
+    outline: none;
+}
+
+.button-calc {
+    display: block;
+    width: 100% !important;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+ul.button-calc {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.button-calc button {
+    background: #6757a3;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    width: 100px;
+    margin: 10px;
+    border: 0;
+    cursor: pointer;
+
+}
+
+.button-calc li button:hover {
+    background: #4c34a2;
+
+}
+
+.table-calc {
+    width: 100%;
+    max-width: 400px
+}
+
+.table-calc tbody tr.table-title td {
+    color: #6757a3;
+}
+
+.table-calc tbody tr {
+    border-bottom: 1px solid #707070;
+    /*transition: .2s background;*/
+    background: #fff;
+}
+
+.table-calc tbody tr td {
+    color: #000;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    border: 1px solid #818588
+}
+
+.calc-result {
+    background: #6757a3;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    width: 150px;
+    margin: 20px 0;
+}
