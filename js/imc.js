@@ -5,8 +5,5 @@ function calculate() {
     var imc = peso / altura ** 2
 
     document.querySelector('.calc-result strong').innerHTML = (imc).toFixed(2);
+
 }
-
-
-
-
