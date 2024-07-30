@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculadora-imc</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" src="./js/imc.js"></script>
 </head>
 
 <body>
@@ -16,7 +15,7 @@
 
             <div class="inputs-calc">
                 <p>Digite sua altura: <span>(ex: 1.80)</span></p>
-                <input type="text" placeholder="Metros" id="altura_input" maxlength="4">
+                <input type="text" placeholder="Metros" id="altura_input" maxlength="5">
             </div>
             <div class="inputs-calc">
                 <p>Digite seu peso: <span>(ex: 79.9)</span></p>
@@ -25,10 +24,10 @@
 
             <ul class="button-calc">
                 <li>
-                    <button type="button" id="submit_calc" onclick="calculate();">Calcular</button>
+                    <button type="button" id="submit_calc" onclick="calcular();">Calcular</button>
                 </li>
                 <li>
-                    <button type="button" id="clear_calc" onclick="window.location.reload()">Limpar</button>
+                    <button type="button" id="clear_calc" onclick="limpar();">Limpar</button>
                 </li>
             </ul>
 
@@ -66,6 +65,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./js/imc.js"></script>
 
 </body>
 

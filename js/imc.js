@@ -1,4 +1,5 @@
-function calculate() {
+
+function calcular() {
     var altura = document.getElementById("altura_input").value;
     var peso = document.getElementById("peso_input").value;
 
@@ -7,5 +8,14 @@ function calculate() {
     document.querySelector('.calc-result strong').innerHTML = (imc);
 
 }
+
+function limpar() {
+    document.getElementById("altura_input").value = '';
+    document.getElementById("peso_input").value = '';
+    document.querySelector('.calc-result strong').innerHTML = ('');
+}
+
+
+
 
 
