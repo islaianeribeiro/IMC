@@ -1,3 +1,7 @@
+html {
+    background: #232323;
+}
+
 .calculadora-imc {
     width: 100%;
     float: left;
@@ -54,7 +58,7 @@
 
 .button-calc {
     display: block;
-    width: 100% !important;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 25px;
 }
@@ -97,7 +101,6 @@ ul.button-calc {
 
 .table-calc tbody tr {
     border-bottom: 1px solid #707070;
-    /*transition: .2s background;*/
     background: #fff;
 }
 
@@ -110,10 +113,18 @@ ul.button-calc {
 
 .calc-result {
     background: #6757a3;
-    color: #fff;
-    font-size: 14px;
     padding: 10px 15px;
     border-radius: 20px;
     width: 150px;
     margin: 20px 0;
+}
+
+.calc-result span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.calc-result strong {
+    color: #fff;
+    font-size: 16px;
 }
