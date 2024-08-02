@@ -15,11 +15,13 @@
 
             <div class="inputs-calc">
                 <p>Digite sua altura: <span>(ex: 1.80)</span></p>
-                <input type="text" placeholder="Metros" id="altura_input" maxlength="5">
+                <input type="text" placeholder="Metros" id="altura_input" maxlength="4"
+                    oninput="formatDecimalInput(event)">
             </div>
             <div class="inputs-calc">
                 <p>Digite seu peso: <span>(ex: 79.9)</span></p>
-                <input type="text" placeholder="Quilos" id="peso_input" maxlength="5">
+                <input type="text" placeholder="Quilos" id="peso_input" maxlength="6"
+                    oninput="formatDecimalInput(event)">
             </div>
 
             <ul class="button-calc">
